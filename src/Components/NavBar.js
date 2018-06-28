@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Navbar, NavItem, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import '../App.css';
 
 class NavBar extends Component {
@@ -8,15 +9,14 @@ class NavBar extends Component {
       <div>
         <Navbar className="navbar">
           <Nav className="nav">
-            <NavItem id="navitem">HOME GALLERY</NavItem>
-            <NavItem id="navitem">PACKAGES</NavItem>
-            <NavItem id="navitem">ARTIST BEHIND MY LOGO</NavItem>
-            <NavItem id="navitem">JUST ME & MY TRIPOD</NavItem>
-            <NavItem id="navitem">MY INSTAGRAM</NavItem>
-            <NavItem id="navitem">ABOUT</NavItem>
+            <NavItem><Link to="/" id="navitem">HOME GALLERY</Link></NavItem>
+            <NavItem><Link to="/packages" id="navitem">PACKAGES</Link></NavItem>
+            <NavItem><Link to="/theartistbehindmylogo" id="navitem">ARTIST BEHIND MY LOGO</Link></NavItem>
+            <NavItem><Link to="justmeandmytripod" id="navitem">JUST ME & MY TRIPOD</Link></NavItem>
+            <NavItem><Link to="about" id="navitem">ABOUT</Link></NavItem>
           </Nav>
           <Nav pullRight>
-            <NavItem id="navheader">DANIELLE QUINTO</NavItem>
+            <NavItem id="navheader" href="/">D a n i e l l e &nbsp; Q u i n t o</NavItem>
           </Nav>
         </Navbar>
       </div>
