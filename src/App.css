@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Assistant');
 
+h1 {
+  font-family: 'Assistant', sans-serif;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
 .nav {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -48,9 +54,11 @@ round {
 }
 #categoryTitle {
   height: 200px;
-  margin-top: 100px;
+  pointer-events: none;
   object-fit: cover;
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 0px;
   position: relative;
   z-index: 1;
 }
@@ -61,6 +69,18 @@ round {
   to {
     width: 100%;
   }
+}
+@font-face {
+  font-family: Better Together;
+  src: url('./BetterTogether.ttf');
+}
+#text {
+  font-family: 'Better Together';
+  font-size: 150px;
+  text-align: center;
+  color: #C89B36;
+  margin-top: 100px;
+  margin-left: 50%;
 }
 #beehive {
   position: absolute;
@@ -74,6 +94,9 @@ round {
   cursor: pointer;
   animation: fade 1s ease;
   -webkit-animation-fill-mode: forwards;
+}
+#beehive:hover + #categoryTitle {
+  padding-top: 50px;
 }
 @keyframes fade {
   from {

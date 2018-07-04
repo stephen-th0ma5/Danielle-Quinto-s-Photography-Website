@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import Navbar from './Components/NavBar';
-import events from './Components/events.png';
-import nature from './Components/nature.png';
-import coffee from './Components/coffee.png';
-import weddings from './Components/weddings.png';
-import gardens from './Components/gardens.png';
-import seasonal from './Components/seasonal.png';
-import portraits from './Components/portraits.png';
-import weddingsBG from './Components/WEDDINGS.jpg';
-import gardensBG from './Components/GARDENS.jpg';
-import coffeeBG from './Components/COFFEE SHOPS.jpg';
-import natureBG from './Components/NATURE.jpg';
-import seasonalBG from './Components/SEASONAL.jpg';
-import eventsBG from './Components/EVENTS.jpg';
-import portraitsBG from './Components/PORTRAITS.jpg';
+import events from './Images/events.png';
+import nature from './Images/nature.png';
+import coffee from './Images/coffee.png';
+import weddings from './Images/weddings.png';
+import gardens from './Images/gardens.png';
+import seasonal from './Images/seasonal.png';
+import portraits from './Images/portraits.png';
+import weddingsBG from './Images/WEDDINGS.jpg';
+import gardensBG from './Images/GARDENS.jpg';
+import coffeeBG from './Images/COFFEE SHOPS.jpg';
+import natureBG from './Images/NATURE.jpg';
+import seasonalBG from './Images/SEASONAL.jpg';
+import eventsBG from './Images/EVENTS.jpg';
+import portraitsBG from './Images/PORTRAITS.jpg';
 import Category from './Components/Category';
+import Text from './Components/Text';
 import './App.css';
 
 class App extends Component {
@@ -22,7 +23,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Text /><br />
         <center>
+        <h1>T H E &nbsp; B E E H I V E S</h1>
         <Category name="Portraits" src={portraits} bg={portraitsBG} />
         <Category name="Coffee Shops" src={coffee} bg={coffeeBG} /><br />
         <Category name="Nature" src={nature} bg={natureBG} />
