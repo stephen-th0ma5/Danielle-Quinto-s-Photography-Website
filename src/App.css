@@ -12,15 +12,15 @@
 .categoryBG {
   position: absolute;
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   margin-right: 10px;
   margin-bottom: 10px;
   z-index: -1;
 }
 .category {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   text-align: center;
   display: inline-block;
   margin-right: 10px;
@@ -47,8 +47,8 @@ round {
   font-family: 'LGf Besitos Round';
 }
 #categoryTitle {
-  height: 400px;
-  margin-top: 200px;
+  height: 200px;
+  margin-top: 100px;
   object-fit: cover;
   width: 100%;
   position: relative;
@@ -66,8 +66,8 @@ round {
   position: absolute;
   margin-right: 10px;
   margin-bottom: 10px;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   opacity: 0;
 }
 #beehive:hover {
