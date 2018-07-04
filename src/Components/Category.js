@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import beehive from './beehive.png';
-import $ from 'jquery';
 import '../App.css';
 
 class Category extends Component {
-  componentDidMount() {
-  }
   render() {
     return(
         <div className="category">
